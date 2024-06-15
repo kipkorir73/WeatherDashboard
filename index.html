@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="location-search">
+            <input type="text" id="location-input" placeholder="Enter location...">
+            <button id="search-btn">Search</button>
+            <button id="geolocation-btn">Use My Location</button>
+        </div>
+        <div class="unit-conversion">
+            <label for="unit-toggle">Unit:</label>
+            <select id="unit-toggle">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info" id="weather-info">
+                <!-- Weather data will be displayed here -->
+            </div>
+        </div>
+        <div class="forecast">
+            <h2>3 Day Outlook</h2>
+            <div class="forecast-info" id="forecast-info">
+                <!-- Forecast data will be displayed here -->
+            </div>
+        </div>
+        <div class="hourly-forecast">
+            <h2>Hourly Forecast</h2>
+            <div class="hourly-info" id="hourly-info">
+                <!-- Hourly forecast data will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
